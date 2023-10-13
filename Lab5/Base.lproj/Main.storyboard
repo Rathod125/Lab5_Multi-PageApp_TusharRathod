@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rPV-6z-r3n">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cartoon-5544856_1280" translatesAutoresizingMaskIntoConstraints="NO" id="juN-Cw-MFW">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kindle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvL-K6-tyT">
+                                <rect key="frame" x="113" y="123" width="169" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG9-xq-bf8">
+                                <rect key="frame" x="158" y="341" width="76" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Level 1">
+                                    <color key="baseBackgroundColor" red="0.0" green="0.46628259560000002" blue="0.45486799210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="wiO-pl-Kba" kind="show" id="e4x-ck-Whc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJz-pY-Vou">
+                                <rect key="frame" x="159" y="476" width="78" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Level 2">
+                                    <color key="baseBackgroundColor" red="0.0" green="0.46628259555360818" blue="0.45486799206269452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ySj-lb-c3S" kind="show" id="crQ-JS-g8M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9z-cI-mW9">
+                                <rect key="frame" x="291" y="852" width="50" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="info.circle.fill" catalog="system"/>
+                                <connections>
+                                    <segue destination="9oS-gM-e7A" kind="show" id="2Af-Sr-307"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="juN-Cw-MFW" secondAttribute="bottom" id="EGA-QX-urc"/>
+                            <constraint firstItem="X9z-cI-mW9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="-107" id="Oxg-Sb-iHU"/>
+                            <constraint firstItem="juN-Cw-MFW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SRa-Fe-dwx"/>
+                            <constraint firstItem="juN-Cw-MFW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c9M-a1-WB4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="juN-Cw-MFW" secondAttribute="trailing" id="e3v-ND-GJC"/>
+                            <constraint firstItem="X9z-cI-mW9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="nRS-sT-JsD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qRf-5K-rjF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2619.0839694656488" y="-132.3943661971831"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EvF-GK-rmG">
+            <objects>
+                <viewController id="wiO-pl-Kba" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lv5-yB-a4m">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="child-8297551_1280" translatesAutoresizingMaskIntoConstraints="NO" id="sft-WB-ULD">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lZ-vS-ENG">
+                                <rect key="frame" x="79" y="336" width="235" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="The Brave Little Rabbit">
+                                    <color key="baseBackgroundColor" red="0.0" green="0.46628259560000002" blue="0.45486799210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="pT8-rb-ttB" kind="show" id="nN2-fI-B32"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDB-JS-UnE">
+                                <rect key="frame" x="79" y="478" width="235" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="The Brave Little Turtle">
+                                    <color key="baseBackgroundColor" red="0.0" green="0.46628259560000002" blue="0.45486799210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="1af-tT-Dxp" kind="show" id="RUh-OR-f8c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PyT-yP-X7g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sft-WB-ULD" firstAttribute="leading" secondItem="PyT-yP-X7g" secondAttribute="leading" id="Dem-02-DfH"/>
+                            <constraint firstItem="PyT-yP-X7g" firstAttribute="trailing" secondItem="sft-WB-ULD" secondAttribute="trailing" id="K1X-UR-WuK"/>
+                            <constraint firstItem="PyT-yP-X7g" firstAttribute="bottom" secondItem="sft-WB-ULD" secondAttribute="bottom" id="sor-I5-caa"/>
+                            <constraint firstItem="sft-WB-ULD" firstAttribute="top" secondItem="PyT-yP-X7g" secondAttribute="top" id="tAB-ak-OVU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wR9-oj-kvP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kXr-hV-gvV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1869.4656488549617" y="-132.3943661971831"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gLn-AQ-TzN">
+            <objects>
+                <viewController id="pT8-rb-ttB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yM8-9l-d7x">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fox-5679446_1280" translatesAutoresizingMaskIntoConstraints="NO" id="gbr-bB-3Cq">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9En-le-EvF">
+                                <rect key="frame" x="16" y="418" width="361" height="288"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Once upon a time, in a cozy little burrow deep within the forest, lived a brave little rabbit named Rosie. Rosie was known for her boundless curiosity and her adventurous spirit. One sunny morning, she decided to explore the mysterious part of the forest that no other rabbit had ever dared to venture into.As Rosie hopped along the unfamiliar path, she stumbled upon a lost baby bird with a broken wing. The baby bird was scared and lonely, so Rosie decided to help. She gently cradled the bird in her paws and, with great care, carried it back to her burrow.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aEf-Gg-vgU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gbr-bB-3Cq" firstAttribute="trailing" secondItem="aEf-Gg-vgU" secondAttribute="trailing" id="Ic1-cj-y09"/>
+                            <constraint firstItem="gbr-bB-3Cq" firstAttribute="top" secondItem="aEf-Gg-vgU" secondAttribute="top" id="aeE-rq-TX1"/>
+                            <constraint firstItem="aEf-Gg-vgU" firstAttribute="bottom" secondItem="gbr-bB-3Cq" secondAttribute="bottom" id="oAE-ha-ZYd"/>
+                            <constraint firstItem="gbr-bB-3Cq" firstAttribute="leading" secondItem="aEf-Gg-vgU" secondAttribute="leading" id="vY9-Y8-M1v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wQl-O4-A2G">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="aP4-Iw-CPT">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ybF-t1-xSH">
+                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.right.fill" catalog="system"/>
+                                <connections>
+                                    <segue destination="XxJ-Rg-g3H" kind="show" id="3Y9-fu-Jhd"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idy-zX-s88" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1019.0839694656488" y="-460.56338028169017"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rIS-Uj-ruY">
+            <objects>
+                <viewController id="XxJ-Rg-g3H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dfc-ZZ-mu0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homes-8194751_1280" translatesAutoresizingMaskIntoConstraints="NO" id="ybw-iD-t9T">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NhH-j7-vXI">
+                                <rect key="frame" x="16" y="420" width="361" height="291"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Rosie nurtured the baby bird back to health, providing it with food, warmth, and companionship. In return, the baby bird taught Rosie the sweet songs of the forest, filling her life with beautiful melodies.Over time, Rosie and the baby bird became the best of friends, and their story spread throughout the forest. Rosie's bravery and kindness were celebrated by all the animals, and she learned that true bravery came from helping others.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ie1-2C-lWH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ybw-iD-t9T" firstAttribute="top" secondItem="Ie1-2C-lWH" secondAttribute="top" id="8oO-HV-cMm"/>
+                            <constraint firstItem="ybw-iD-t9T" firstAttribute="trailing" secondItem="Ie1-2C-lWH" secondAttribute="trailing" id="Xz4-bo-N0m"/>
+                            <constraint firstItem="ybw-iD-t9T" firstAttribute="leading" secondItem="Ie1-2C-lWH" secondAttribute="leading" id="el7-7e-9Rb"/>
+                            <constraint firstItem="ybw-iD-t9T" firstAttribute="bottom" secondItem="Ie1-2C-lWH" secondAttribute="bottom" id="jIW-m7-BEl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="A6U-o0-I3A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rU-vN-Wgg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164.12213740458014" y="-461.26760563380282"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3rN-hK-ITA">
+            <objects>
+                <viewController id="9oS-gM-e7A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VcA-F7-00l">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toddler-8297939_1280" translatesAutoresizingMaskIntoConstraints="NO" id="yav-va-Qh8">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="14Q-d5-1KC">
+                                <rect key="frame" x="16" y="103" width="361" height="436"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">About the App:This app provides a collection of age-appropriate stories for kids.Each level offers stories tailored to different age groups.Level 1 - Preschool (Ages 3-5):Designed for younger children, ages 3 to 5.Short and simple stories with easy-to-grasp themes.Ideal for early readers and bedtime stories.Level 2 - Elementary (Ages 6-10):Geared towards older kids, ages 6 to 10.Stories are slightly longer and may include moral lessons.Suitable for developing reading skills and values.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lzg-rJ-aqI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yav-va-Qh8" firstAttribute="leading" secondItem="Lzg-rJ-aqI" secondAttribute="leading" id="OG3-S1-xRX"/>
+                            <constraint firstItem="yav-va-Qh8" firstAttribute="top" secondItem="Lzg-rJ-aqI" secondAttribute="top" id="a4f-1w-2PF"/>
+                            <constraint firstItem="Lzg-rJ-aqI" firstAttribute="bottom" secondItem="yav-va-Qh8" secondAttribute="bottom" id="p4o-mz-zUL"/>
+                            <constraint firstItem="Lzg-rJ-aqI" firstAttribute="trailing" secondItem="yav-va-Qh8" secondAttribute="trailing" id="yfx-xA-wh4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="njh-OR-k98"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avY-8W-dKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2619.0839694656488" y="667.6056338028169"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9kn-n8-OS8">
+            <objects>
+                <viewController id="ySj-lb-c3S" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iVE-Z6-ULM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rabbit-3075088_1280" translatesAutoresizingMaskIntoConstraints="NO" id="SgX-X5-j0I">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ici-Oe-GPh">
+                                <rect key="frame" x="79" y="409" width="235" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="The Lost Kitten's Adventure">
+                                    <color key="baseBackgroundColor" red="0.0" green="0.46628259560000002" blue="0.45486799210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="OU0-5b-cba" kind="show" id="T89-nm-XNN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JMm-h6-DUp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JMm-h6-DUp" firstAttribute="bottom" secondItem="SgX-X5-j0I" secondAttribute="bottom" id="60H-xR-wQW"/>
+                            <constraint firstItem="JMm-h6-DUp" firstAttribute="trailing" secondItem="SgX-X5-j0I" secondAttribute="trailing" id="Hht-da-2YH"/>
+                            <constraint firstItem="SgX-X5-j0I" firstAttribute="top" secondItem="JMm-h6-DUp" secondAttribute="top" id="WcT-FP-U1k"/>
+                            <constraint firstItem="SgX-X5-j0I" firstAttribute="leading" secondItem="JMm-h6-DUp" secondAttribute="leading" id="yWY-jI-Z1s"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="goX-QL-tHh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kq-FI-sxz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1761.0687022900763" y="589.43661971830988"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ha4-mP-exw">
+            <objects>
+                <viewController id="OU0-5b-cba" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LHc-x8-0vt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pugs-7200102_1280" translatesAutoresizingMaskIntoConstraints="NO" id="CUa-qh-lRk">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jHg-RC-ssy">
+                                <rect key="frame" x="16" y="418" width="361" height="296"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">In a bustling city, there lived a tiny, lost kitten named Whiskers. Whiskers had a heart full of curiosity and a nose for adventure, which often got her into delightful predicaments. One day, while exploring the colorful alleyways, she heard a faint meow echoing in the distance.Following the meow, Whiskers found a small, trembling puppy stuck in a narrow gap between two buildings. The poor puppy was scared and couldn't find its way out. Without a moment's hesitation, Whiskers squeezed into the tight space and nuzzled the puppy, comforting it with soft purrs.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6uA-Xv-D2f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CUa-qh-lRk" firstAttribute="trailing" secondItem="6uA-Xv-D2f" secondAttribute="trailing" id="eGg-je-WWa"/>
+                            <constraint firstItem="6uA-Xv-D2f" firstAttribute="bottom" secondItem="CUa-qh-lRk" secondAttribute="bottom" id="p6b-t6-yog"/>
+                            <constraint firstItem="CUa-qh-lRk" firstAttribute="leading" secondItem="6uA-Xv-D2f" secondAttribute="leading" id="vee-1a-WAD"/>
+                            <constraint firstItem="CUa-qh-lRk" firstAttribute="top" secondItem="6uA-Xv-D2f" secondAttribute="top" id="zB5-XE-mZG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CpH-VM-5UV">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="ohL-kp-PGE">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Bql-T3-scF">
+                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.right.fill" catalog="system"/>
+                                <connections>
+                                    <segue destination="lpa-nr-CIq" kind="show" id="8UH-HD-3eh"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxd-Bm-V9T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-927.48091603053433" y="930.98591549295782"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y6f-cp-bAB">
+            <objects>
+                <viewController id="lpa-nr-CIq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0VQ-jg-t0A">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="super-woman-1885016_1280" translatesAutoresizingMaskIntoConstraints="NO" id="mdZ-eq-rWz">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KLA-Mc-irY">
+                                <rect key="frame" x="16" y="420" width="361" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Whiskers used her keen feline senses to navigate through the maze-like passages and eventually led the puppy to safety. The puppy's owner was overjoyed to be reunited with their beloved pet and was incredibly grateful to Whiskers.Word of Whiskers' bravery and kindness quickly spread through the city, and she became a local hero. From that day on, Whiskers was never lost again, for she had found not only her way but also her true calling – to help those in need and to make new friends on every adventure.These short stories convey the importance of bravery, kindness, and helping others, perfect for young readers or listeners.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8KS-rM-afy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mdZ-eq-rWz" firstAttribute="leading" secondItem="8KS-rM-afy" secondAttribute="leading" id="47Z-rp-UKS"/>
+                            <constraint firstItem="mdZ-eq-rWz" firstAttribute="top" secondItem="8KS-rM-afy" secondAttribute="top" id="GVQ-v4-QXO"/>
+                            <constraint firstItem="8KS-rM-afy" firstAttribute="bottom" secondItem="mdZ-eq-rWz" secondAttribute="bottom" id="LZX-YR-h3D"/>
+                            <constraint firstItem="mdZ-eq-rWz" firstAttribute="trailing" secondItem="8KS-rM-afy" secondAttribute="trailing" id="dJj-ZS-A6s"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6e8-5N-9ZL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHE-iz-UYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-118.32061068702289" y="930.98591549295782"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hWW-3y-jVl">
+            <objects>
+                <viewController id="1af-tT-Dxp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tqD-qQ-wQR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dragon-151851_1280" translatesAutoresizingMaskIntoConstraints="NO" id="L2t-bz-qqD">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LvI-RZ-B9t">
+                                <rect key="frame" x="16" y="415" width="361" height="308"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Once upon a time, in a pond surrounded by tall reeds, there lived a young turtle named Timmy. Timmy was known for his courage in the face of adversity. One summer day, a terrible storm approached. The other animals in the pond hid in fear, but Timmy decided to help them.With a determined heart, he braved the fierce winds and pouring rain to alert his fellow pond-dwellers. He guided the frogs, fish, and ducks to a safe, sheltered spot, and they all huddled together until the storm passed. Timmy's bravery and leadership earned him the respect and admiration of all the pond's inhabitants, and he learned that sometimes, it takes a little turtle to show great courage.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="taE-K7-EHs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L2t-bz-qqD" firstAttribute="trailing" secondItem="taE-K7-EHs" secondAttribute="trailing" id="14j-Sn-jev"/>
+                            <constraint firstItem="L2t-bz-qqD" firstAttribute="leading" secondItem="taE-K7-EHs" secondAttribute="leading" id="Svh-vL-74A"/>
+                            <constraint firstItem="L2t-bz-qqD" firstAttribute="top" secondItem="taE-K7-EHs" secondAttribute="top" id="e1n-VS-YOa"/>
+                            <constraint firstItem="taE-K7-EHs" firstAttribute="bottom" secondItem="L2t-bz-qqD" secondAttribute="bottom" id="vv4-gr-1dc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nU0-JB-lJz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prx-6z-Gzs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-944.27480916030527" y="233.80281690140845"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="73u-TE-jnA">
+            <objects>
+                <navigationController id="rPV-6z-r3n" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bBM-lN-0zH">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fy6-7K-aHE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FeV-As-LNy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3387" y="-132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
+        <image name="cartoon-5544856_1280" width="1280" height="1280"/>
+        <image name="child-8297551_1280" width="1280" height="1280"/>
+        <image name="dragon-151851_1280" width="1280" height="688"/>
+        <image name="fox-5679446_1280" width="1280" height="1280"/>
+        <image name="homes-8194751_1280" width="1280" height="1280"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="pugs-7200102_1280" width="1280" height="1157"/>
+        <image name="rabbit-3075088_1280" width="1280" height="1280"/>
+        <image name="super-woman-1885016_1280" width="1280" height="720"/>
+        <image name="toddler-8297939_1280" width="960" height="1280"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
